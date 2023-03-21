@@ -1,9 +1,16 @@
 import React from 'react';
-import '../styles/global.scss';
+import CreateNewPass from '../containers/CreateNewPass';
+import Layout from '../containers/Layout';
+import Login from '../containers/Login';
+import RecoveryPass from '../containers/RecoveryPass';
+import '../styles/global.css';
 
 const App = () => {
     return(
-        <h1>Hola Mundo bienvenidos al curso practico de React!</h1>
+        <Layout>
+            <Login />
+            <CreateNewPass />
+        </Layout>
     );
 }
 

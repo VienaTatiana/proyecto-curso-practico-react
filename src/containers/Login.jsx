@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Login.scss';
 
 const Login = () => {
     return (
@@ -10,12 +11,9 @@ const Login = () => {
                 <div>
                     <label for="email" className ="label">Email address</label>
                     <input type="email" id="email" placeholder="user@example.com" className ="input input-email" />
-
                     <label for="password" className ="label">Password</label>
                     <input type="password" id="password" placeholder="*********" className ="input input-password" />
-
                     <input type="submit" value="Login" className ="primary-button login-button" />
-            
                     <p className ="forgot-password">
                         <a href="./new-pass.html">Forgot my password</a>
                     </p>
