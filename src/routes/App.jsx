@@ -4,19 +4,21 @@ import CreateNewPass from '../containers/CreateNewPass';
 import Layout from '../containers/Layout';
 import Login from '../containers/Login';
 import RecoveryPass from '../containers/RecoveryPass';
+import Home from '../pages/Home';
+import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
 const App = () => {
     return(
         <BrowserRouter>
+        <Layout>
         <Switch>
-            <Layout>
                 <Route exact path = "/" component = {Home} />
-                <Route exact path = "/Login" component = {Login} />
-                <Route exact path = "/CreateNewPass" component = { CreateNewPass} />
-                <Route component = { NotFound } />
-            </Layout>
+                <Route exact path = "/login" component = {Login} />
+                <Route exact path = "/create-new-pass" component = { CreateNewPass} />
+                <Route path = "*" component = { NotFound } />
         </Switch>
+        </Layout>
         </BrowserRouter>
     );
 }
