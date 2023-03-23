@@ -16,7 +16,7 @@ const App = () => {
                 <Route exact path = "/" component = {Home} />
                 <Route exact path = "/login" component = {Login} />
                 <Route exact path = "/create-new-pass" component = { CreateNewPass} />
-                <Route exact path = "/recovery-pass" component = {RecoveryPass} />
+                <Route exact path = "/recovery-pass" component = { RecoveryPass } />
                 <Route path = "*" component = { NotFound } />
         </Switch>
         </Layout>
