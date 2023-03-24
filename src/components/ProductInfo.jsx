@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/ProductInfo.scss';
+import '@styles/ProductInfo.scss';
 
 const ProductInfo = () => {
     return (
-        <aside className="product-detail">
+        <aside className="ProductInfo">
         <div className="image-container">
             <div className="product-detail-close">
                 <img src="./icons/icon_close.png" alt="close" />

@@ -1,87 +1,25 @@
 @import 'vars';
 
-.container-main{
-    width: 360px;
-    position: absolute;
-    right: 0;
-    padding: 0 24px 0;
-}
-.my-shopping-cart-container{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    margin: 24px;
-}
-.title-shopping-cart{
-    display: flex;
-}
-.title-shopping-cart img{
-    transform: rotate(180deg);
-    margin-right: 20px;
-    cursor: pointer;
-}
-.title {
-    font-size: var(--lg);
-    font-weight: bold;
-}
-.my-total-content{
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    gap: 16px;
-    background: var(--text-input-field);
-    border-radius: 8px;
-    align-items: center;
-    padding-left:24px;
-    margin-bottom: 24px;
-}
-.my-total-content p{
-    font-weight: bold;
-    font-size: var(--lg);
-}
-.shopping-cart{
+.ShoppingCartItem{
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     gap: 16px;
-    margin-bottom: 12px;
-    margin-top: 12px;
-    margin-left: 12px;
+    margin-bottom: 24px;
     align-items: center;
 }
-.shopping-cart figure {
+.ShoppingCartItem figure {
     margin: 0;
 }
-.shopping-cart figure img{
+.ShoppingCartItem figure img{
     width: 70px;
     height: 70px;
     border-radius: 20px;
     object-fit: cover;
 }
-.shopping-cart p:nth-child(2){
+.ShoppingCartItem p:nth-child(2){
     color: var(--very-light-pink);
 }
-.shopping-cart p:nth-child(3){
+.ShoppingCartItem p:nth-child(3){
     font-size: var(--md);
     font-weight: bold;
-}
-.shopping-cart img{
-    cursor: pointer;
-}
-.primary-button{
-    background-color: var(--hospital-green);
-    border-radius: 8px;
-    border: none;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 50px;
-}
-@media (max-width:640px){
-    .title-shopping-cart{
-        display: none;
-    }
-    .container-main{
-        width: 100%;
-        padding: 0;
-    }
 }
