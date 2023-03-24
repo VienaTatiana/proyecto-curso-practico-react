@@ -1,5 +1,8 @@
 import React from 'react';
-import '../styles/Order.scss';
+import '@styles/Order.scss';
+
+import flecha from '@icons/flechita.svg';
+
 
 const Order = () => {
     return (
@@ -15,7 +18,7 @@ const Order = () => {
                     </p>
                 </div>
                 <p>$560.00</p>
-                <img src="./icons/flechita.svg" alt="arrow" />
+                <img src={flecha} alt="arrow" />
             </div>
 
             <div className="my-orders-content">
@@ -26,7 +29,7 @@ const Order = () => {
                     </p>
                 </div>
                 <p>$560.00</p>
-                <img src="./icons/flechita.svg" alt="arrow" />
+                <img src={flecha} alt="arrow" />
             </div>
 
             <div className="my-orders-content">
@@ -37,7 +40,7 @@ const Order = () => {
                     </p>
                 </div>
                 <p>$560.00</p>
-                <img src="./icons/flechita.svg" alt="arrow" />
+                <img src={flecha} alt="arrow" />
             </div>
 
             <div className="my-orders-content">
@@ -48,7 +51,7 @@ const Order = () => {
                     </p>
                 </div>
                 <p>$560.00</p>
-                <img src="./icons/flechita.svg" alt="arrow" />
+                <img src={flecha} alt="arrow" />
             </div>
 
             <div className="my-orders-content">
@@ -59,7 +62,7 @@ const Order = () => {
                     </p>
                 </div>
                 <p>$560.00</p>
-                <img src="./icons/flechita.svg" alt="arrow" />
+                <img src={flecha} alt="arrow" />
             </div>
 
             <div className="my-orders-content">
@@ -70,7 +73,7 @@ const Order = () => {
                     </p>
                 </div>
                 <p>$560.00</p>
-                <img src="./icons/flechita.svg" alt="arrow" />
+                <img src={flecha} alt="arrow" />
             </div>
         </div>
     </div>

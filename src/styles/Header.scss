@@ -10,7 +10,7 @@ nav{
 .menu{
     display: none;
 }
-.logo{
+.logoYard{
     width: 100px;
 }
 .navbar-left{
@@ -74,6 +74,7 @@ nav{
         display: block;
         width: 30px;
         height: 60px;
+        cursor: pointer;
     }
     .navbar-left ul{
         display: none;
