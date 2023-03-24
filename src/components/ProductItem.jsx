@@ -1,9 +1,8 @@
 import React from 'react';
-import '../styles/ProductItem.scss';
+import '@styles/ProductItem.scss';
 
 const ProductItem = () => {
     return (
-        <section className="main-container">
         <div className="card-container">
             <div className="product-card">
                 <img src="https://images.pexels.com/photos/14994927/pexels-photo-14994927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="producto" />
@@ -18,7 +17,6 @@ const ProductItem = () => {
                 </div>   
             </div>
         </div>
-        </section>
     );
 }
 
