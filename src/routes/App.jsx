@@ -8,10 +8,16 @@ import CreateNewPass from '@pages/CreateNewPass';
 import MyAccount from '@pages/MyAccount';
 import CreateAccount from '@pages/CreateAccount';
 import NotFound from '@pages/NotFound';
+import AppContext from '@context/AppContext';
+import useInitialState from '@hooks/useInitialState';
+
+
 import '@styles/global.css';
 
 const App = () => {
+    const initialState = useInitialState();
     return(
+        <AppContext.Provider value= {initialState} >
         <BrowserRouter>
         <Layout>
         <Switch>
@@ -25,6 +31,7 @@ const App = () => {
         </Switch>
         </Layout>
         </BrowserRouter>
+        </AppContext.Provider>
     );
 }
 
